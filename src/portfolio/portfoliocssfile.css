@@ -1,0 +1,233 @@
+/* .footer{
+    display: flex;
+    /* justify-content: center; */
+/* gap:"20px";
+    justify-content: center;
+} */
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center horizontally
+  /* height: 100vh; Full viewport height */
+  /* padding: 30px; */
+
+  padding-top: "60px";
+  /* border-radius: 30px; */
+}
+#about-me {
+  display: flex;
+  gap: 50px;
+  box-shadow: 0px 0px 5px;
+  height: 50vh;
+  width: 80vw;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 80px;
+}
+#about-me img {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* box-shadow: 0px 0px 5px; */
+}
+#education {
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 20px;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 20px;
+}
+#skills {
+  box-shadow: 0px 0px 5px;
+  height: 70vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#projects {
+  box-shadow: 0px 0px 5px;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#achievements {
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#certificates {
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#about:target,
+#contact:target,
+#skills:target,
+#about-me:target,
+#education:target,
+#projects:target,
+#certificates:target,
+#achievements:target {
+  /* display: block; */
+  /* height: 40vh; */
+  /* width: 80vw; */
+  background-color: rgb(141, 204, 241);
+  padding: 20%;
+  font-size: 25px;
+}
+
+section:target {
+  padding-top: 60px; /* Adjust this value based on your header height */
+  /* margin-top: -60px; Offset the scroll to account for padding */
+}
+
+/*media-queries*/
+@media (max-width: 428px) {
+  .header {
+    display: block;
+  }
+  #about-me {
+    height: 50vh;
+    width: 100vw;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 100px;
+  }
+  #about-me img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+  }
+  #education {
+    box-shadow: 0px 0px 5px;
+    height: 40vh;
+    width: 100vw;
+    border-radius: 20px;
+    /* padding: 20px; */
+    padding: 10px 20px;
+  }
+  #projects {
+    box-shadow: 0px 0px 5px;
+    height: 150vh;
+    width: 100vw;
+    border-radius: 20px;
+    /* padding: 20px; */
+    padding: 10px 20px;
+  }
+  #skills {
+    box-shadow: 0px 0px 5px;
+    height: 80vh;
+    width: 100vw;
+    border-radius: 20px;
+    /* padding: 30px; */
+    padding: 10px 20px;
+  }
+  #certificates {
+    box-shadow: 0px 0px 5px;
+    height: 40vh;
+    width: 100vw;
+    border-radius: 20px;
+    /* padding: 20px; */
+    padding: 10px 20px;
+  }
+  #achievements {
+    box-shadow: 0px 0px 5px;
+    height: 50vh;
+    width: 100vw;
+    border-radius: 20px;
+    /* padding: 20px; */
+    padding: 10px 20px;
+  }
+  #contact {
+    box-shadow: 0px 0px 5px;
+    height: 50vh;
+    width: 100vw;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /* padding: 20px; */
+    /* display:inline-block; */
+  }
+  #contact:target,
+  #skills:target,
+  #about-me:target,
+  #education:target,
+  #projects:target,
+  #certificates:target,
+  #achievements:target {
+    /* display: block; */
+    /* height: 40vh; */
+    /* width: 80vw; */
+    background-color: rgb(141, 204, 241);
+    padding: 20% 20%;
+    font-size: 20px;
+  }
+  #about-me:target {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Adjust height based on content */
+    width: 120vw; /* Full width of the viewport */
+    padding: 20px 40px; /* Add consistent spacing (horizontal padding added) */
+    font-size: 20px; /* Adjust font size */
+    border-radius: 20px;
+    margin-top: 50px; /* Adjust spacing from the top */
+    background-color: rgb(141, 204, 241); /* Optional background color */
+    gap: 20px; /* Add space between the text and image */
+    box-sizing: border-box;
+  }
+
+  #about-me:target img {
+    border-radius: 50%;
+    width: 150px; /* Adjust image size */
+    height: 150px; /* Ensure image is circular */
+  }
+
+  #about-me:target h1 {
+    font-size: 24px; /* Adjust text size */
+    margin: 0; /* Remove default margins */
+  }
+  #skills:target {
+    height: 100vh;
+  }
+
+  #achievements:target {
+    height: 100vh;
+    width: 100vw;
+  }
+}
